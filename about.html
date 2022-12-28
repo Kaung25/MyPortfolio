@@ -29,7 +29,7 @@
           <!--Navbar-->
           <nav class="px-2 bg-white border-zinc-200 ">
               <div class="container flex flex-wrap items-center justify-between mx-auto pt-3">
-                <a href="#" class="flex items-center ml-3 md:ml-10 lg:ml-10"><!--logo-->
+                <a href="./index.html" class="flex items-center ml-3 md:ml-10 lg:ml-10"><!--logo-->
                     <img src="./img/Logo.png" class="h-4 mr-3 lg:h-6 md:h-6 sm:h-6" alt="" />
                 </a>
                 <button id="nav-btn" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-zinc-500 rounded-lg md:hidden hover:bg-zinc-100 focus:outline-none focus:ring-2 focus:ring-zinc-200" aria-controls="navbar-dropdown" aria-expanded="false">
@@ -66,8 +66,8 @@
 
             <div class="w-[80%] lg:w-1/2 content-center mx-auto max-w-3xl mt-10 relative"> <!--profile container-->
                 <div class="flex md:flex-row lg:flex-row flex-col gap-8">
-                    <div class=" rounded-lg">
-                        <img class="w-72 content-center mx-auto " src="./img/kaungmyatmoeehtoon.png" alt="">
+                    <div onmouseover="changeImg()" class="rounded-lg">
+                        <img id="profileimg" class=" w-72 content-center mx-auto " src="./img/kaungmyatmoeehtoon_avatar.png" alt="">
                     </div>
                     <div class="w-full lg:w-1/2 text-[1.15rem] leading-7 my-auto text-zinc-900">
                         <p>I'm Kaung Myat Moee Htoon, a self-taught designer with over 6 years of experience. I've proven records in the design industry for years as a freelancer.<br><br>
@@ -75,7 +75,7 @@
                             I am passionate about what I do and am confident that my work is solid. I enjoy illustrating and have created many UX and UI designs for different clients with different requirements.</p>
                     </div>
                 </div>
-                <img class="w-40 hidden lg:block md:w-32 absolute top-44 md:top-24 lg:top-48 -left-12 lg:-left-10" src="./img/penwheel.png" alt="">
+                <!-- <img class="w-40 hidden lg:block md:w-32 absolute top-44 md:top-24 lg:top-48 -left-12 lg:-left-10" src="./img/penwheel.png" alt=""> -->
             </div>
 
             <div class="bg-zinc-900 w-full h-full"><!--container-->
@@ -211,6 +211,10 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
         }
+
+        // function changeImg() {
+        //     document.getElementById("profileimg").src="./img/kaungmyatmoeehtoon.png";
+        //  }
     </script>
 </body>
 </html>
