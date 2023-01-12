@@ -553,6 +553,12 @@ video {
   }
 }
 
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2560px;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -753,6 +759,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.aspect-auto {
+  aspect-ratio: auto;
 }
 
 .h-fit {
@@ -1695,5 +1705,69 @@ video {
 
   .xl\:text-10xl {
     font-size: 13rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .\33xl\:top-\[27vh\] {
+    top: 27vh;
+  }
+
+  .\33xl\:-right-\[450vh\] {
+    right: -450vh;
+  }
+
+  .\33xl\:mt-52 {
+    margin-top: 13rem;
+  }
+
+  .\33xl\:mt-\[67vh\] {
+    margin-top: 67vh;
+  }
+
+  .\33xl\:hidden {
+    display: none;
+  }
+
+  .\33xl\:w-\[4vh\] {
+    width: 4vh;
+  }
+
+  .\33xl\:w-\[800vh\] {
+    width: 800vh;
+  }
+
+  .\33xl\:gap-16 {
+    gap: 4rem;
+  }
+
+  .\33xl\:space-x-32 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(8rem * var(--tw-space-x-reverse));
+    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .\33xl\:space-y-\[26vh\] > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(26vh * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(26vh * var(--tw-space-y-reverse));
+  }
+
+  .\33xl\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .\33xl\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .\33xl\:text-\[3vh\] {
+    font-size: 3vh;
+  }
+
+  .\33xl\:text-\[27vh\] {
+    font-size: 27vh;
   }
 }
