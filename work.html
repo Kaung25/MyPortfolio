@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../tailwind.config.js">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body{
         font-family: 'SF Pro Display', sans-serif;
@@ -89,9 +90,9 @@
         </div>
     
 
-    <div class=""><!--showcase-->
+    <div class="" data-aos="fade-up" data-aos-duration="1000"><!--showcase-->
         <div class="w-[80%] md:w-1/2 lg:w-1/2 mx-auto mt-40 space-y-7">
-        <div class="max-w-3xl bg-slate-200 mx-auto">
+        <div class="max-w-3xl mx-auto">
             <h1 class="relative text-left text-2xl lg:text-5xl font-bold mt-10">Project Showcase</h1>
         </div>
         <div class="w-full max-w-3xl mx-auto relative"><!--container-->
@@ -219,7 +220,10 @@
 
     </div><!--container1 end-->
 </div>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 <script>
     const button = document.querySelector('#nav-btn'); // Hamburger Icon
     const menu = document.querySelector('#navbar-default'); // Menu

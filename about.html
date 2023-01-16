@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../tailwind.config.js">
     <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body{
         font-family: 'SF Pro Display', sans-serif;
@@ -79,7 +80,7 @@
             </div>
 
             <div class="bg-zinc-900 w-full h-full"><!--container-->
-            <div class="w-[80%] lg:w-1/2 mx-auto max-w-3xl mt-24 relative bg-zinc-900 h-full lg:h-[60rem]"><!--about me-->
+            <div class="w-[80%] lg:w-1/2 mx-auto max-w-3xl mt-24 relative bg-zinc-900 h-full lg:h-[60rem]"  data-aos="fade-up" data-aos-duration="1000"><!--about me-->
                 <div class="relative top-28 flex flex-col md:grid md:grid-flow-col grid-rows-4 gap-14 h-fit">
                     <div class=" space-y-4 h-fit">
                         <h1 class="text-2xl font-bold text-white">Education background</h1>
@@ -216,5 +217,9 @@
         //     document.getElementById("profileimg").src="./img/kaungmyatmoeehtoon.png";
         //  }
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
